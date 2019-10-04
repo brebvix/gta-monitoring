@@ -1,0 +1,93 @@
+<!-- ============================================================== -->
+<!-- Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- User profile -->
+        <div class="user-profile"  style="background: url(assets/images/background/user-info.jpg) no-repeat;"> 
+            <!-- User profile image -->
+            <div class="profile-img"> <img src="assets/images/users/1.jpg" alt="user" /> </div>
+            <!-- User profile text-->
+            <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
+                <div class="dropdown-menu animated flipInY">
+                    <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                    <a href="javascript:void(0)" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                    <a href="javascript:void(0)" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                    <div class="dropdown-divider"></div> <a href="javascript:void(0)" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                    <div class="dropdown-divider"></div> <a href="javascript:void(0)" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+        <!-- End User profile text-->
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="nav-small-cap">PERSONAL</li>
+                <li>
+                    <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink=""><i class="mdi mdi-gauge"></i><span class="hide-menu">Starter Page</span></a>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Component</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="accordion">Accordion</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="alert">Alert</a></li>
+                        
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="carousel">Carousel</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="datepicker">Datepicker</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="dropdown">Dropdown - Collapse</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="modal">Modal</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="pagination">Pagination</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="Popovertooltip">Popover & Tooltip</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="progressbar">Progressbar</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="rating">Ratings</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="tabs">Tabs</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="timepicker">Timepicker</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="typehead">Typehead</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-brush"></i><span class="hide-menu">Icons</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="fontawesome">Fontawesome</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="simpleline">Simple Line Icons</a></li>
+                        <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="material">Material Icons</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="javascript:void(0)">item 1.1</a></li>
+                        <li><a href="javascript:void(0)">item 1.2</a></li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="javascript:void(0)">item 1.3.1</a></li>
+                                <li><a href="javascript:void(0)">item 1.3.2</a></li>
+                                <li><a href="javascript:void(0)">item 1.3.3</a></li>
+                                <li><a href="javascript:void(0)">item 1.3.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">item 1.4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+    <!-- Bottom points-->
+    <div class="sidebar-footer">
+        <!-- item-->
+        <a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+        <!-- item-->
+        <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+        <!-- item-->
+        <a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+    </div>
+    <!-- End Bottom points-->
+</aside>
+<!-- ============================================================== -->
+<!-- End Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->

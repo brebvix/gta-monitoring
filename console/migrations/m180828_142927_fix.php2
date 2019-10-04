@@ -1,0 +1,50 @@
+<?php
+
+use yii\db\Migration;
+
+/**
+ * Class m180828_142927_fix
+ */
+class m180828_142927_fix extends Migration
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function safeUp()
+    {
+        $this->renameColumn('freelance_vacancies', 'vacancie_id', 'vacancie_id');
+
+        $this->addForeignKey(
+            'fk-freelance_vacancies-vacancie_id',
+            'freelance_vacancies',
+            'vacancie_id',
+            'freelance_vacancies_list',
+            'id'
+        );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function safeDown()
+    {
+        echo "m180828_142927_fix cannot be reverted.\n";
+
+        return false;
+    }
+
+    /*
+    // Use up()/down() to run migration code without a transaction.
+    public function up()
+    {
+
+    }
+
+    public function down()
+    {
+        echo "m180828_142927_fix cannot be reverted.\n";
+
+        return false;
+    }
+    */
+}

@@ -1,0 +1,6 @@
+1.) change tether.min.js to popper.min.js 
+2.) change card-block to card-body
+3.) change navbar-toggleble-sm to navbar-expand-md
+4.) add responsive utility classes to our custom grid.scss as we added in grid.scss ( check iin grid.scss we also comment that bootstrap 4 hack)
+5.) add class .card-img-top{width:auto;} to grid.scss
+6.) add color white to warning button in app.scss
